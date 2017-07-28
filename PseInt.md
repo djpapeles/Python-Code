@@ -101,4 +101,95 @@ Proceso sin_titulo
 FinProceso
 ```
 
+## Operadores Algebraicos, relacionales y logicos
 
+Algebraicos
+
+```
+Proceso Operadores
+	
+	Definir A, B como Enteros;
+	A <- 5;
+	
+	Escribir A+5;
+	Escribir A-5;
+	Escribir A*5;
+	Escribir A/5;
+	Escribir A^5;
+	Escribir A%5;
+	
+	B <- 2;
+	
+	Escribir A*5+10/B;
+	Escribir 2*A^2+10*A+B;
+	
+FinProceso
+```
+
+Relacionales
+
+```
+Proceso Operadores
+	
+	Definir A, B como Enteros;
+	A <- 5;
+	B <- 2;
+	
+	Escribir A = B;
+	Escribir A <> B;
+	Escribir A < B;
+	Escribir A > B;
+	Escribir A <= B;
+	Escribir A >= B;
+	
+	Escribir VERDADERO = VERDADERO;
+	Escribir FALSO <> VERDADERO;
+	
+FinProceso
+```
+
+Relacionales
+
+```
+Proceso Operadores
+	
+	Definir A, B como Enteros;
+	A <- 5;
+	B <- 2;
+	
+	Escribir A = B;
+	Escribir A <> B;
+	Escribir A < B;
+	Escribir A > B;
+	Escribir A <= B;
+	Escribir A >= B;
+	
+	Escribir VERDADERO = VERDADERO;
+	Escribir FALSO <> VERDADERO;
+	
+FinProceso
+```
+
+Logicos
+
+```
+Proceso OperadoresLogicos
+
+	Definir A, B como Logicos;
+	
+	A <- VERDADERO;
+	B <- FALSO;
+	
+	//Escribir NO A;
+	//Escribir NO B;
+	
+	Escribir A Y B;
+	
+	Escribir A O B;
+	
+	Escribir NO A Y NO B;
+	
+	Escribir NO A O NO B;
+	
+FinProceso
+```
