@@ -223,3 +223,68 @@ Proceso CaracteresANumeros
 	
 FinProceso
 ```
+## Condicional Si-Entonces
+```
+Proceso sin_titulo
+	
+	Definir Numero1 como Entero;
+	Escribir "Escribe un número entero";
+	Leer Numero1;
+	Escribir "La resta de ", Numero1, " entre 2 es ", Numero1%2;
+	Escribir "Es par?";
+	
+	//Escribir Numero1%2 = 0;
+	
+	Si Numero1%2 = 0 Entonces
+		Escribir Numero1, ' es par';
+	FinSi
+	
+	Si Numero1%2 <> 0 Entonces
+		Escribir Numero1, ' es impar';
+	FinSi
+	
+FinProceso
+```
+## Condicional Si-Segun
+```
+Proceso sin_titulo
+	Definir NumeroA, NumeroB, Operacion como Numericos;
+	
+	Escribir Sin Saltar "Escribe el número A";
+	Leer NumeroA;
+	
+	Escribir Sin Saltar "Escribe el número B";
+	Leer NumeroB;
+	
+	Escribir "Operaciones Disponibles";
+	Escribir "1: Suma";
+	Escribir "2: Resta";
+	Escribir "3: Multiplicación";
+	
+	Escribir Sin Saltar "¿Qué operación queres ejecutar?";
+	Escribir Sin Saltar "Escribe la letra en mayúscula o mínuscula";
+	
+	Leer Operacion;
+	
+	Segun Operacion Hacer
+		1:
+			// aqui la suma
+			Escribir "Has elegido la suma";
+			Escribir NumeroA, '+', NumeroB;
+			Escribir NumeroA+NumeroB;
+		2:
+			// aqui la resta
+			Escribir "Has elegido la resta";
+			Escribir NumeroA, '-', NumeroB;
+			Escribir NumeroA-NumeroB;
+		3:
+			// aqui la multiplicacion
+			Escribir "Has elegido la multiplicación";
+			Escribir NumeroA, '*', NumeroB;
+			Escribir NumeroA*NumeroB;
+		De Otro Modo:
+			Escribir "No has elegido la operación correcta";
+	FinSegun
+	
+FinProceso
+```
