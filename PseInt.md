@@ -193,3 +193,33 @@ Proceso OperadoresLogicos
 	
 FinProceso
 ```
+
+## Comparacion de caracteres
+
+```
+Proceso sin_titulo
+	
+	Escribir 'A'>'b';
+	Escribir 'A'>'a';
+	Escribir 'A'>'h';
+	Escribir 'A'>'z';
+	
+FinProceso
+```
+## Valores de caracteres
+
+Para saber la posicion que ocupan en el codigo ASCII Extendido
+```
+Proceso CaracteresANumeros
+
+	Escribir  ConvertirANumero(' ');
+	Escribir  ConvertirANumero('A');
+	Escribir  ConvertirANumero('a');
+	Escribir  ConvertirANumero('Z');
+	Escribir  ConvertirANumero('z');
+	Escribir  ConvertirANumero('~');
+	Escribir  ConvertirANumero('á');
+	Escribir  ConvertirANumero('ñ');
+	
+FinProceso
+```
