@@ -288,3 +288,29 @@ Proceso sin_titulo
 	
 FinProceso
 ```
+
+## Iteracion mientras
+
+```
+Proceso EjemploMientras
+	Definir Contador como Entero;
+	Contador <- 0;
+	Mientras Contador <> 10 Hacer
+		Escribir "Repeticion del mientras ", Contador;
+		Contador <- Contador + 1;
+	FinMientras
+FinProceso
+```
+
+## Iteracion Repetir
+
+```
+Proceso EjemploRepetir
+	Definir Contador como Entero;
+	Contador <- 0;
+	Repetir
+		Escribir "Repeticion del mientras ", Contador;
+		Contador <- Contador + 1;
+	Hasta Que Contador = 10;
+FinProceso
+```
