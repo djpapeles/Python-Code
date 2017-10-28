@@ -31,17 +31,20 @@ while True:
     print('')
 
     print('Elige del listado, en que lugar del mundo quieres saber la hora:')
-
-    # NZ: 13 horas menos que España | VE: 6 horas menos que España | AL: Igual que España
-    # FRA: Igual que España         | ING: Una hora menos que Epaña| MR: Una hora menos que España
+	
+	# con rjust(10) justificamos el texto a la derecha
 
     print('')
-    print('------------------------------------------------------------------------------')
+    print('---------------------------------------------------------------------------------------------------')
     print('EXIT: Salir'.rjust(10),'| SPA: España'.rjust(10),'| NZ: Nueva Zelanda'.rjust(10),
-      '| VE: Venezuela'.rjust(10),'| AL: Alemania'.rjust(10),'| FRA: Francia'.rjust(10))
-    print('------------------------------------------------------------------------------')
-    print('ING: Inglaterra'.rjust(10),'| MR: Marruecos'.rjust(10))
-    print('------------------------------------------------------------------------------')
+		  '| VE: Venezuela'.rjust(10),'| AL: Alemania'.rjust(10),'| FRA: Francia'.rjust(10))
+    print('---------------------------------------------------------------------------------------------------')
+    print('ING: Inglaterra'.rjust(10),'| MR: Marruecos'.rjust(10),'| NOR: Noruega'.rjust(10),
+          '| BOL: Bolivia'.rjust(10), '| FIL: Filipinas'.rjust(10),'| NEP: Nepal'.rjust(10))
+    print('---------------------------------------------------------------------------------------------------')
+    print('RUS: Rusia'.rjust(10),'|SUE: Suecia'.rjust(10),'|PAK: Pakistan'.rjust(10),
+          '|HON: Honduras'.rjust(10),'|LET: Letonia'.rjust(10),'|LAO: Laos'.rjust(10),'|SUI: Suiza'.rjust(10))
+    print('---------------------------------------------------------------------------------------------------')
     print('')
 
     # Ofrecemos que el usuario elija un pais
@@ -61,9 +64,31 @@ while True:
         print('La hora en Inglaterra es ', modificador(-1))
     elif choice=='MR':
         print('la hora en Marruecos es ', modificador(-1))
+    elif choice=='NOR':
+        print('la hora en Noruega es ', modificador(0))
+    elif choice=='BOL':
+        print('la hora en Bolivia es ', modificador(-6))
+    elif choice=='FIL':
+        print('la hora en Filipinas es ', modificador(-18))
+    elif choice=='NEP':
+        print('la hora en Nepal es ', modificador(+4))
+    elif choice=='RUS':
+        print('la hora en Rusia es ', modificador(+1))
+    elif choice=='SUE':
+        print('la hora en Suecia es ', modificador(0))
+    elif choice=='PAK':
+        print('la hora en Pakistan es ', modificador(+3))
+    elif choice=='HON':
+        print('la hora en Honduras es ', modificador(-8))
+    elif choice=='LET':
+        print('la hora en Letonia es ', modificador(+1))
+    elif choice=='LAO':
+        print('la hora en Laos es ', modificador(-19))
+    elif choice=='SUI':
+        print('la hora en Suiza es ', modificador(0))
     elif choice=='EXIT':
         break
     # Hacemos una pausa para continuar
     pausa=input('Pulsa una tecla')
     # Limpiamos la pantalla, en Windows es os.system('cls')
-    os.system('clear')
+    os.system('cls')
